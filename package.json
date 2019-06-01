@@ -1,0 +1,25 @@
+{
+  "name": "simongamepwa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start":"browser-sync start --server ./docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Michael2721/UE2.git"
+  },
+  "author": "Michael Föger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Michael2721/UE2/issues"
+  },
+  "homepage": "https://github.com/Michael2721/UE2#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.5"
+  }
+}
