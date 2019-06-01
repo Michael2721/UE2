@@ -7,24 +7,14 @@
     }
     
 
-    var loader = document.getElementById('loader');
-    setTimeout(function () {
-        loader.firstChild.classList.add('rotating');
-    }, 700);
-    setTimeout(function () {
-        loader.classList.add('is-hidden');
-    }, 1400);
-    setTimeout(function () {
-        loader.remove();
-    }, 3400);
 
     // setup levels
     var levels = [
-        [0, 1, 3, 2],
-        [0, 0, 1, 3, 1],
+        [0, 1, 3, 2] //,
+        /*[0, 0, 1, 3, 1],
         [0, 1, 3, 2, 3, 1, 3],
-        [1, 3, 3, 1, 4, 2],
-        [0, 3, 0, 1, 2, 1, 0]
+        [1, 3, 3, 1, 0, 2],
+        [0, 3, 0, 1, 2, 1, 0]*/
     ];
     var levelIdx = 0;
     var selectedLevel = [];
