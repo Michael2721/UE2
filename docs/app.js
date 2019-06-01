@@ -9,13 +9,15 @@
 
 
     // setup levels
-    var levels = [
-        [0, 1, 3, 2] //,
-        /*[0, 0, 1, 3, 1],
-        [0, 1, 3, 2, 3, 1, 3],
-        [1, 3, 3, 1, 0, 2],
-        [0, 3, 0, 1, 2, 1, 0]*/
-    ];
+    // var levels = [
+    //     [0, 1, 3, 2],
+    //     [0, 0, 1, 3, 1],
+    //     [0, 1, 3, 2, 3, 1, 3],
+    //     [1, 3, 3, 1, 0, 2],
+    //     [0, 3, 0, 1, 2, 1, 0]
+    // ];
+    var lvl = [Math.floor(Math.random()*4)];
+    var levels = [lvl];
     var levelIdx = 0;
     var selectedLevel = [];
 
@@ -66,6 +68,20 @@
     }
 
     function setLevel(level) {
+        console.log(level);
+        var arr = [];
+        if(level == 0) {
+            //levels[level] = arr.push(Math.floor(Math.random()*4));
+            console.log("arr = "+arr[0]);
+        }else {
+            arr = levels[level-1];
+            arr.push(Math.floor(Math.random()*4));
+            levels.push(arr);
+            console.log("was anderes"+levels[level]);
+        }
+
+
+
         levelIdx = level;
         selectedLevel = levels[levelIdx];
         document.getElementById('level').innerHTML = levelIdx;
