@@ -89,7 +89,7 @@ section button.btnBlue.flash {
 
 button#startGame {
     font-family: cursive;
-    margin-top: 30px;
+    margin-top: 20px;
     transition: all 0.5s cubic-bezier(0.65, -0.25, 0.25, 1.95);
     font-weight: bold;
     color: #FFF;
@@ -108,7 +108,7 @@ button#startGame:hover, button#startGame:focus, button#startGame:active {
 
 button#resetGame {
     font-family: cursive;
-    margin-top: 30px;
+    margin-top: 15px;
     transition: all 0.5s cubic-bezier(0.65, -0.25, 0.25, 1.95);
     font-weight: bold;
     color: #FFF;
