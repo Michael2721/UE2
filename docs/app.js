@@ -53,6 +53,11 @@
         start();
     });
 
+    document.getElementById('resetGame').addEventListener('click', function () {
+        console.log('click reset');
+        reset();
+    });
+
     function flashItem(item) {
         addClass(item, 'flash');
         setTimeout(function () {
@@ -86,6 +91,16 @@
         setVisibility('correct', false);
         setVisibility('incorrect', false);
         nextItem();
+    }
+
+    function reset() {
+        lvl = [Math.floor(Math.random()*4)];
+        levels = [lvl];
+        levelIdx = 0;
+        selectedLevel = [];
+    
+        setLevel(0);
+        
     }
 
     function setVisibility(id, visible) {
