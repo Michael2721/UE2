@@ -204,7 +204,7 @@ export class SimonGame extends HTMLElement {
         this.shadowRoot.innerHTML = `
         <link rel="stylesheet" href="webcomponents/simongame.css">
             <main id="simon-game">
-            <h1>Pastel Simon Game</h1>
+            <h1>Simon Game</h1>
 
             <section id="gameBoard">
                 <div class="alert" id="correct">Perfect!</div>
